@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'MaisonNeue-Bold';
+    src:  url('../fonts/MaisonNeue-Bold.woff2') format('woff2'),
+          url('../fonts/MaisonNeue-Bold.woff') format('woff');
+}
+
+body{
+    background-color: #00880D;
+    color: #fff;
+    font-family: 'MaisonNeue-Bold';
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 5em;
+}
+
+.home{
+    height: 900px;
+    text-align: center;
+    background: url('../images/ic_gojek_logo.png') no-repeat;
+}
