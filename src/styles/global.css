@@ -1,7 +1,7 @@
 @font-face {
-    font-family: 'MaisonNeue-Bold';
-    src:  url('../fonts/MaisonNeue-Bold.woff2') format('woff2'),
-          url('../fonts/MaisonNeue-Bold.woff') format('woff');
+    font-family: 'MaisonNeue-Demi';
+    src:  url('../fonts/MaisonNeue-Demi.woff2') format('woff2'),
+          url('../fonts/MaisonNeue-Demi.woff') format('woff');
 }
 
 body{
@@ -16,8 +16,16 @@ h1{
     font-size: 5em;
 }
 
-.home{
-    height: 900px;
-    text-align: center;
+.main{
+    min-height: 900px;
     background: url('../images/ic_gojek_logo.png') no-repeat;
 }
+
+.blog_list li{
+    list-style-type: none;
+}
+
+.blog_list li a{
+    color: #fff;
+}
+

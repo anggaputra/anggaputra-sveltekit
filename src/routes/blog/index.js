@@ -1,7 +1,7 @@
 // @ts-nocheck
 import { convertDate } from "$lib/utils";
 export async function GET() {
-  const allPostFiles = import.meta.globEager("./*.{svx,md}");
+  const allPostFiles = import.meta.globEager("./posts/*.{svx,md}");
   const allPosts = Object.entries(allPostFiles).map(([path, post]) => {
     const postPath = path.slice(2, -3);
     return {

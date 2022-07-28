@@ -1,4 +1,1 @@
-<div class="home">
-<h1>Hello World</h1>
-</div>
-
+<h1 class="my-5">Hello World</h1>
