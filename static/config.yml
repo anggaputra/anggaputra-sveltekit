@@ -1,0 +1,36 @@
+backend:
+  name: gitlab
+  repo: ixd/ixd-website # Path to your GitLab repository
+  auth_type: pkce # Required for pkce
+  app_id: 64fb0b23a3aaea3a88862ac4fdabf004e7974a729be77c92765820388628c1c4 # Application ID from your GitLab settings
+  api_root: https://source.golabs.io/api/v4
+  base_url: https://source.golabs.io
+  auth_endpoint: oauth/authorize
+collections:
+  - name: "team" # Used in routes, e.g., /admin/collections/blog
+    label: "Team" # Used in the UI
+    folder: "src/routes/blog"
+    create: true
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "article" # Used in routes, e.g., /admin/collections/blog
+    label: "Article" # Used in the UI
+    folder: "src/routes/blog" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+#site_url: https://ixd-website-sveltekit.vercel.app/
+#display_url: https://ixd-website-sveltekit.vercel.app/
+# logo_url: https://your-site.com/images/logo.svg

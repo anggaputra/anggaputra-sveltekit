@@ -1,13 +1,7 @@
-@font-face {
-    font-family: 'MaisonNeue-Demi';
-    src:  url('../fonts/MaisonNeue-Demi.woff2') format('woff2'),
-          url('../fonts/MaisonNeue-Demi.woff') format('woff');
-}
-
 body{
     background-color: #00880D;
     color: #fff;
-    font-family: 'MaisonNeue-Bold';
+    font-family: 'MaisonNeue-Demi';
     margin: 0;
     padding: 0;
 }

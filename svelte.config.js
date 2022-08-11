@@ -19,10 +19,7 @@ const config = {
     mdsvex(mdsvexConfig),
   ],
   extensions: [".svelte", ".html", ...mdsvexConfig.extensions],
-  prerender: {
-    default: true,
-  },
-  trailingSlash: "always",
+  trailingSlash: "never",
 };
 
 export default config;
