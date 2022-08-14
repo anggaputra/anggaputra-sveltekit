@@ -33,33 +33,4 @@
 @import 'bootstrap/scss/utilities';
 @import 'bootstrap/scss/utilities/api';
 
-
-@font-face {
-    font-family: 'MaisonNeue-Demi';
-    src: local('MaisonNeue-Demi'), local('MaisonNeue-Demi'), url('/static/fonts/MaisonNeue-Demi.woff');
-    font-weight: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'MaisonNeue-Demi';
-    src: local('MaisonNeue-Demi'), local('MaisonNeue-Demi'), url('/static/fonts/MaisonNeue-Demi.woff2');
-    font-weight: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'MaisonNeue-Bold';
-    src: local('MaisonNeue-Bold'), local('MaisonNeue-Bold'), url('/static/fonts/MaisonNeue-Bold.woff');
-    font-weight: bold;
-    font-display: swap;
-}
-
-
-
-@font-face {
-    font-family: 'MaisonNeue-Bold';
-    src: local('MaisonNeue-Bold'), local('MaisonNeue-Bold'), url('/static/fonts/MaisonNeue-Bold.woff2');
-    font-weight: bold;
-    font-display: swap;
-}
+@import url('https://fonts.cdnfonts.com/css/circular-book');
