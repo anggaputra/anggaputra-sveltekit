@@ -17,6 +17,6 @@ collections:
 media_folder: "static/uploads"
 public_folder: "/uploads"
 
-#site_url: https://ixd-website-sveltekit.vercel.app/
-#display_url: https://ixd-website-sveltekit.vercel.app/
+site_url: https://anggaputra.co/
+display_url: https://anggaputra.co/
 # logo_url: https://your-site.com/images/logo.svg
